@@ -16,7 +16,7 @@ import Typography from '@material-ui/core/Typography';
 
 const images = [
   {
-    title: 'Biblioteca',
+    title: 'Bibliotecas',
     width: '33%',
 
   },
@@ -26,7 +26,6 @@ const images = [
   },
   
   {
-  
     title: 'Parceiros',
     width: '33%',
   },

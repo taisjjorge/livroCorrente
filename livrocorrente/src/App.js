@@ -14,9 +14,9 @@ function App() {
       <main>
         <Routes />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+        <footer>
+          <Footer />
+        </footer>
     </div>
   </BrowserRouter>
   );

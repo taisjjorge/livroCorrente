@@ -1,0 +1,17 @@
+.div-main {
+    /* background-color: #F8F5F5; */
+    background-color: #F2F5F7;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.titulo-principal {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.titulo-secundario {
+    text-align: center;
+    color: #474040;
+    margin-bottom: 70px;
+}

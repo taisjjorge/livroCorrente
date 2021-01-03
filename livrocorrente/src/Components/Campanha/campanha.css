@@ -1,17 +1,59 @@
 .div-campanha {
-    background-color: yellow;
- }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
  
- .card-campanha {
-     display: flex;
-     justify-content: space-around;
-     width: 40%;
-     background-color: rgb(240, 234, 234);
-     padding: 20px;
- }
+.row-campanha {
+
+justify-content: space-around;
+  }
+
+.card-campanha {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    background-color: rgb(255, 255, 255);
+    transition: .3s;
+    box-shadow: 2px 2px 2px #CCC;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.card-campanha:hover {
+    box-shadow: 4px 4px 4px #CCC;
+
+}
+
+.conteudo-campanha {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.livro-campanha {
+    width: 130px;
+    height: 170px;
+}
+
+.info-campanha {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Responsividade mobile*/
+
+@media(max-width: 768px) {
+    .div-campanha {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-campanha {
+        width: 100%;
+    }
+}
  
- .livro-campanha {
-     width: 130px;
-     height: 170px;
- }
- 
+
+

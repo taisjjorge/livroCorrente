@@ -1,3 +1,7 @@
+.cards {
+    display: flex;
+}
+
 .div-main {
     /* background-color: #F8F5F5; */
     background-color: #F2F5F7;

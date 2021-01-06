@@ -1,5 +1,11 @@
 .cards {
     display: flex;
+    justify-content: space-around ;
+}
+
+.cards a:link{
+    width: 100%;
+    text-decoration: none;
 }
 
 .div-main {

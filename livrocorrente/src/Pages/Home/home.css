@@ -1,3 +1,13 @@
+.cards {
+    display: flex;
+    justify-content: space-around ;
+}
+
+.cards a:link{
+    width: 100%;
+    text-decoration: none;
+}
+
 .div-main {
     /* background-color: #F8F5F5; */
     background-color: #F2F5F7;

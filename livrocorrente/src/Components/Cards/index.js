@@ -32,13 +32,13 @@ const images = [
 ];
 
 const useStyles = makeStyles((theme) => ({
-//   root: {
-//     display: 'flex',
-//     flexWrap: 'wrap',
-//     minWidth: 300,
-//     width: '100%',
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    minWidth: 300,
+    width: '100%',
     
-//   },
+  },
   image: {
     position: 'relative',
     height: 200,
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
-//   focusVisible: {},
+  focusVisible: {},
   imageButton: {
     position: 'absolute',
     left: 0,
@@ -71,15 +71,15 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     color: theme.palette.common.white,
   },
-//   imageSrc: {
-//     position: 'absolute',
-//     left: 0,
-//     right: 0,
-//     top: 0,
-//     bottom: 0,
-//     backgroundSize: 'cover',
-//     backgroundPosition: 'center 40%',
-//   },
+  imageSrc: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center 40%',
+  },
   imageBackdrop: {
     position: 'absolute',
     left: 0,

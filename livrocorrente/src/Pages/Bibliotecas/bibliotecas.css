@@ -1,0 +1,13 @@
+.titulo-bg {
+    height: 200px;
+    background-color: #987284;
+    opacity: .8;
+    display: flex;
+    justify-content: right;
+}
+
+.titulo-bg h1{
+    color:white;
+    text-align: right;
+    
+}

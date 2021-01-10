@@ -1,6 +1,63 @@
 .div-main-quemSomos{
     background-color: #F2F5F7;
-    /* height: auto; */
-    height: 400px;
-    padding-bottom: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.img-leitura {
+    width: 50%;
+    text-align: center; 
+    height: 400px;
+}
+
+.inf-quemSomos-parent{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.inf-quemSomos {
+    margin-right: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.inf-quemSomos h1 {
+    font-family: 'Amatic SC', cursive;
+    font-weight:bold;
+    /* font-family: 'Parisienne', cursive; */
+    /* font-family: 'Fredericka the Great', cursive; */
+    color: rgb(41, 41, 41);
+    margin-bottom: 20px;
+}
+
+.indicadores {
+    background-color:#27b2c7;
+    height: 300px;
+}
+
+
+@media(max-width: 768px) {
+    .div-main-quemSomos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .img-leitura {
+        width: 100%;
+    }
+
+    .inf-quemSomos {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+    
+}
+ 

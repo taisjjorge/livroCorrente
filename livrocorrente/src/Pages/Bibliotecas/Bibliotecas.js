@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import HeaderPagina from '../../Components/HeaderPagina';
 import Biblioteca from '../../Components/Biblioteca/Biblioteca';
 
@@ -17,30 +17,28 @@ export default function Bibliotecas() {
         title: 'Casa Azul',
         description: 'Biblioteca comunitária. Integrante de Mar de Leitores - RJ',
         link: 'https://rnbc.org.br/biblioteca/casa-azul/',
-
-
     },
+
     {
         id: 2,
         title: 'Biblioteca comunitária Y',
         description: 'Lorem ipsum .....',
         link: 'https://google.com'
-
     },
+
     {
       id: 2,
       title: 'Biblioteca comunitária Z',
       description: 'Lorem ipsum .....',
       link: 'https://google.com'
-
   },
+
   {
     id: 2,
     title: 'Biblioteca comunitária Z',
     description: 'Lorem ipsum .....',
     link: 'https://google.com'
-
-},
+  },
    
   ]
 
@@ -54,9 +52,7 @@ export default function Bibliotecas() {
           <Row>
           {bibliotecas.map(biblioteca => {
             return (
-              
                   <Biblioteca title={biblioteca.title} description={biblioteca.description} link={biblioteca.link} />
-              
             )
           })}
           </Row>

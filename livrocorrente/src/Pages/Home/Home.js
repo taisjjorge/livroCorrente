@@ -12,12 +12,12 @@ function Home() {
         <React.StrictMode>
             <Banner /> 
             <div className ="cards"> 
-                <a href="Bibliotecas.js"><BtnCard title='Bibliotecas'/></a>
+                <a href="/Bibliotecas/Bibliotecas"><BtnCard title='Bibliotecas'/></a>
                 <a href="https://google.com"><BtnCard title='Voluntários'/></a>
                 <a href="https://google.com"><BtnCard title='Parceiros'/></a>
             </div>
             <div className="div-main">
-                <Container className="container-main">
+                <Container >
                     <h1 className="titulo-principal">Como eu posso ajudar?</h1>
                     <h3 className="titulo-secundario">Doe um livro a uma biblioteca comunitária!</h3>
                    <Campanha />

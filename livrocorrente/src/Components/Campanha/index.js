@@ -12,6 +12,7 @@ export default function Campanha(){
               <div className="info-campanha">
                 <h4>O pequeno príncipe</h4>
                 <p>2 exemplares</p>
+                <p>Gênero: infantil</p>
                 <p>Biblioteca comunitária X</p>
                 <Button>Doar</Button>
               </div> 

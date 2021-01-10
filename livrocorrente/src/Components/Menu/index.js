@@ -30,7 +30,6 @@ function BaseMenu(props) {
                         <NavDropdown.Item href="#action/3.1">Voluntário</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Biblioteca</NavDropdown.Item>
                     </NavDropdown>
-                    {/* <Nav.Link  as={Link} to="/Login" href="/Login">Login</Nav.Link> */}
                 </Nav>      
             </Navbar.Collapse>
         </Navbar>

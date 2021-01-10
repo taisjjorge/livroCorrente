@@ -1,13 +1,9 @@
-.titulo-bg {
-    height: 200px;
-    background-color: #987284;
-    opacity: .8;
-    display: flex;
-    justify-content: right;
-}
 
-.titulo-bg h1{
-    color:white;
-    text-align: right;
+.div-main-bibliotecas{
+    background-color: #F2F5F7;
+    height: auto;
+    padding-bottom: 50px;
     
 }
+
+

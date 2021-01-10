@@ -8,8 +8,5 @@ export default function HeaderPagina (props) {
       <Container fluid className="titulo-bg">
         <h1>{props.titleCategoria}</h1>
       </Container>
-        // <div className="titulo-bg">
-        //   <h1>{props.titleCategoria}</h1>
-        // </div>
     );
     }

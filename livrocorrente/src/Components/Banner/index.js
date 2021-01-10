@@ -5,7 +5,6 @@ export default function BannerPrincipal() {
     return (
     
         <Carousel>
-            
             <Carousel.Item interval={3000} >
                 <img className="img-banner d-block w-100"src="https://i.imgur.com/f42Qi6B.png" alt="First slide"/>
                 <Carousel.Caption>

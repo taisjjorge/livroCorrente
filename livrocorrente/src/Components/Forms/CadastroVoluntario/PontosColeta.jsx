@@ -1,5 +1,5 @@
 import { Button, FormControl, Typography, InputLabel, NativeSelect } from '@material-ui/core';
-import '../Login.css';
+import '../Forms.css';
 
 
 export default function PontosColeta() {

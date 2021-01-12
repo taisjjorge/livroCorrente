@@ -1,5 +1,5 @@
 import { Button, TextField, FormControl } from '@material-ui/core';
-import '../Login.css';
+import '../Forms.css';
 
 export default function DadosPessoais() {
     return(

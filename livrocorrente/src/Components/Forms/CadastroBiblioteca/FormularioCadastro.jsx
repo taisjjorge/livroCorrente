@@ -20,8 +20,12 @@ function FormularioCadastro({aoEnviar, validacoes}) {
     <DadosUsuario aoEnviar={coletarDados} validacoes={validacoes} />, 
     <DadosIdentificacao aoEnviar={coletarDados} validacoes={validacoes} />,
     <Necessidade aoEnviar={coletarDados} validacoes={validacoes}/>,
-    <Typography variant="h5"> Agradecemos o seu cadastro!</Typography> 
-    ];
+    <Typography variant="h6"> Agradecemos o seu cadastro!<br/><br/>
+        <p className="logo-login">LivroCorrente</p><br/>
+    </Typography> 
+
+    // <Typography variant="h8"> Entraremos em contato para dar as boas vindas e esclarecer eventuais dúvidas.</Typography>
+];
 
     function coletarDados(dados){
         setdados({...dadosColetados, ...dados});

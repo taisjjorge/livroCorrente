@@ -1,15 +1,15 @@
-import {  Form, FormGroup, Input, Label } from 'reactstrap';
-import { Button, TextField, FormControl} from '@material-ui/core';
-import './Login.css';
+
+import { Button, TextField, FormControl, Typography} from '@material-ui/core';
 
 
-export function Login() {
+
+export default function Login() {
     return(
         <>
             <FormControl className="form" method="POST">
-                <p className="logo-login">
-                    LivroCorrente
-                </p>
+            <Typography  variant="h5" component="h1" align="center">Login</Typography><br/>
+            <p className="helper-login">Já possui cadastro? <br/>
+                Insira os dados para continuar</p>
 
                     <TextField 
                         id="email"

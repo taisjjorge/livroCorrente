@@ -1,6 +1,54 @@
-.footer {
-    height: 300px;
-    background-color:#987284;
-    
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
 
+
+.container-footer{
+    height: 285px;
+    background-color:#987284;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-top: 80px;
+    width: 250px;
+    height: 30px;
+    font-family: 'Princess Sofia';
+    font-size: 50px;
+    line-height: 50px;
+    color: #EFEFEF;
+}
+
+.title {
+    font-family: 'Roboto';
+    color:#EFEFEF;
+}
+
+.info-inicio,  .suporte {
+    font-family: 'Roboto';
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-footer {
+    /* perguntar para o lucas pq n funcionou*/
+    text-decoration: none;
+}
+
+.socialmedia {
+    margin-top: 80px;
+}
+.redes-sociais{
+    justify-content: space-between;
+}
+
+.copyright {
+    font-family: 'Roboto';
+    font-size: 14px;
+    color:#EFEFEF;
+    text-align: center;
+    background-color:#987284;
+    margin-bottom: -15px;
 }

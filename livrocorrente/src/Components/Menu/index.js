@@ -27,8 +27,8 @@ function BaseMenu(props) {
                 </Nav>  
                 <Nav>
                     <NavDropdown className="nav-link" title="Cadastro/Login" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Voluntário</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Biblioteca</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to= "/Login-Voluntario">Voluntário</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to= "/Login-Biblioteca">Biblioteca</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>      
             </Navbar.Collapse>

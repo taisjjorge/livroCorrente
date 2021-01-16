@@ -32,7 +32,7 @@ export default function Necessidade({aoEnviar}) {
                         label="Insira aqui os títulos mais procurados na sua biblioteca"
                         type="text" 
                         multiline
-                        rowsMax={5}
+                        rowsMax={50}
                         variant="outlined"
                         margin="normal"
                     />

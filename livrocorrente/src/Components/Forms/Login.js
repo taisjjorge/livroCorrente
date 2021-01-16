@@ -8,7 +8,7 @@ export default function Login() {
         <>
             <FormControl className="form" method="POST">
             <Typography  variant="h5" component="h1" align="center">Login</Typography><br/>
-            <p className="helper-login">Já possui cadastro? <br/>
+            <p className="helper">Já possui cadastro? <br/>
                 Insira os dados para continuar</p>
 
                     <TextField 

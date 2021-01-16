@@ -23,8 +23,12 @@
 
 .title {
     font-family: 'Roboto';
+    font-size: 18px;
     color:#EFEFEF;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
+
 
 .info-inicio,  .suporte {
     font-family: 'Roboto';
@@ -33,21 +37,42 @@
     flex-direction: column;
 }
 
-.item-footer {
-    /* perguntar para o lucas pq n funcionou*/
+/* .item-footer   {
+    perguntar para o lucas pq n funcionou
     text-decoration: none;
+
+} */
+
+.item-footer {
+    font-size: 18px;
+    color:#EFEFEF;
+    margin-bottom: 5px;
+}
+
+.item-footer:hover {
+    text-decoration: none;
+    color:#EFEFEF;
 }
 
 .socialmedia {
     margin-top: 80px;
 }
 .redes-sociais{
-    justify-content: space-between;
+    text-align: center;
+}
+
+.icone-contato {
+    margin-right: 15px;
+    color: white;
+}
+
+.icone-contato:hover {
+    color: white;
 }
 
 .copyright {
     font-family: 'Roboto';
-    font-size: 14px;
+    font-size: 12px;
     color:#EFEFEF;
     text-align: center;
     background-color:#987284;

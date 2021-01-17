@@ -8,7 +8,7 @@ export default function QuemSomos () {
    
     return (
         <React.StrictMode>
-            <HeaderPagina className='teste' titleCategoria='Quem somos'/>
+            <HeaderPagina titleCategoria='Quem somos'/>
             <Container fluid className='div-main-quemSomos'>
             {/* Imagem */}
                 <div className="img-leitura">

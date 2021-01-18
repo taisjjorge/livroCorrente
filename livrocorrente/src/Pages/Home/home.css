@@ -25,3 +25,10 @@
     color: #474040;
     margin-bottom: 70px;
 }
+
+#parceiros{
+    height: 300px;
+    background-color: aquamarine;
+   
+    scroll-behavior: smooth;
+}

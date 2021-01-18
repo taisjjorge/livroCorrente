@@ -20,7 +20,11 @@ function FormularioCadastro({aoEnviar, validacoes}) {
     <DadosUsuario aoEnviar={coletarDados} validacoes={validacoes} />, 
     <DadosPessoais aoEnviar={coletarDados} validacoes={validacoes} />,
     <PontosColeta aoEnviar={coletarDados} validacoes={validacoes}/>,
-    <Typography variant="h5"> Agradecemos o seu cadastro!</Typography> 
+    <Typography variant="h6" align="center"> 
+    <br></br>Agradecemos o seu cadastro!<br></br>
+    Nossa equipe entrará em contato para confirmar as informações recebidas e indicar
+    os próximos passos. <br></br><br></br><br></br>
+    </Typography>   
     ];
 
     function coletarDados(dados){
@@ -34,6 +38,8 @@ function FormularioCadastro({aoEnviar, validacoes}) {
 
     return (
         <>
+        <br></br>
+        <Typography  variant="h5" component="h1" align="center">Cadastre-se</Typography>
             <Stepper activeStep={etapaAtual}>
                 <Step>
                     <StepLabel>

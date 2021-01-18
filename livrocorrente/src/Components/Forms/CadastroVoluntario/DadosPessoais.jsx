@@ -6,16 +6,12 @@ import '../Forms.css';
 export default function DadosPessoais({aoEnviar, validacoes}) {
     const [nome, setNome] = useState("");
     const [cpf, setCpf] = useState("");
-    const [nascimento, setNascimento] = useState("");
+    const [email, setEmail] = useState("");
     const [celular, setCelular] = useState("");
     const [ofertas, setOfertas] = useState(true);
-    const [cep, setCep] = useState("");
-    const [endereco, setEndereco] = useState("");
-    const [numero, setNumero] = useState("");
-    const [estado, setEstado] = useState("");
-    const [cidade, setCidade] = useState("");
+    
 
-    const [erros, setErros] = useState({cpf:{valido:true, texto:""}, nome:{valido:true, texto:""}})
+    const [erros, setErros] = useState({cpf:{valido:true, texto:""}, nome:{valido:true, texto:""}, celular:{valido:true, texto:""}})
 
     function validarCampos(event){
         const {name, value} = event.target;
@@ -37,12 +33,14 @@ export default function DadosPessoais({aoEnviar, validacoes}) {
 
     return(
         <>
+             
             <form
             onSubmit={(event) => {
                 event.preventDefault();
-                    aoEnviar({ nome, cpf, nascimento, celular, ofertas, cep, endereco, numero, estado, cidade });
+                if(possoEnviar()){
+                    aoEnviar({ nome, cpf, email, celular, ofertas });
                 }     
-            }>   
+            }}>   
                 <FormControl className="form" method="POST">
 
                         <TextField 
@@ -80,15 +78,37 @@ export default function DadosPessoais({aoEnviar, validacoes}) {
                         />
 
                         <TextField 
+                            value={email}
+                            onChange={(event) => {
+                            setEmail(event.target.value);
+                            }}
+                                id="email"
+                                name="email"
+                                label="Email"
+                                type="email"
+                                required
+                                variant="outlined"
+                                margin="normal"
+                        />
+
+                        <TextField 
+                        value={celular}
+                        onChange={(event) => {
+                        setCelular(event.target.value);
+                        }}
+                        onBlur={validarCampos}
+                        error={!erros.celular.valido}
+                        helperText={erros.celular.texto}
                             id="celular"
                             name="celular"
                             label="Celular"
+                            type="number"
                             required
                             variant="outlined"
                             margin="normal"             
                         />
 
-                        <Typography variant="h7"> 
+                        <Typography variant="h7" > 
                             <br/>Nós mantemos parcerias com livrarias físicas e virtuais. <br/>Na compra de um exemplar nas livrarias parceiras,
                             outro livro é doado diretamente para nossas redes de apoio.<br/><br/>
                             Deseja receber ofertas dos nossos parceiros e incentivar a leitura nas comunidades?
@@ -98,16 +118,9 @@ export default function DadosPessoais({aoEnviar, validacoes}) {
                             control={<Switch checked={ofertas} onChange={(event) => {
                                 setOfertas(event.target.checked) //checked para Switch
                             }} name="ofertas"
-                                color="primary" />} />
+                                color="primary" />} /><br></br>
 
-                        <TextField 
-                            id="celular"
-                            name="celular"
-                            label="Celular"
-                            required
-                            variant="outlined"
-                            margin="normal"             
-                        />
+                        
                         
                         <Button color="primary" active type="submit">Quase lá...</Button>
                     

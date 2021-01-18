@@ -1,22 +1,33 @@
 // import { CadastroVoluntario } from '../../Components/Forms/CadastroVoluntario'
 import FormularioCadastro from '../../Components/Forms/CadastroVoluntario/FormularioCadastro'
-import { Container, Typography } from '@material-ui/core';
+import { Container } from '@material-ui/core';
+import { Tabs, Tab } from 'react-bootstrap';
 import  Login  from '../../Components/Forms/Login'
 
-import {validarCpf, validarNome, validarSenha} from '../../Components/Forms/models/cadastro'
+
+
+import {validarCelular, validarCpf, validarNome, validarSenha} from '../../Components/Forms/models/cadastro'
 
 export default function ValidaVoluntario() {
+    
     return(
-        <Container 
+        <Container
             component="aticle"
             maxWidth="sm" >
-           
-            <Typography  variant="h5" component="h1" align="center">Cadastre-se</Typography>
-            <FormularioCadastro 
-                aoEnviar={aoEnviarForm} 
-                validacoes={{cpf:validarCpf, senha:validarSenha, nome:validarNome}}
-            />
-            <Login />
+        
+
+            <Tabs defaultActiveKey="login" id="uncontrolled-tab-example">
+                <Tab eventKey="login" title="Login">
+                    <Login  />
+                </Tab>
+                <Tab eventKey="cadastro" title="Cadastre-se">
+                    <FormularioCadastro 
+                        aoEnviar={aoEnviarForm} 
+                        validacoes={{cpf:validarCpf, senha:validarSenha, nome:validarNome, celular:validarCelular}}
+                    />
+                </Tab>
+            </Tabs>
+        <br></br><br></br>
         </Container>
     )
 }

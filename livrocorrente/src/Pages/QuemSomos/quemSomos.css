@@ -38,6 +38,19 @@
     font-weight:bold;
     color: rgb(41, 41, 41);
     margin-bottom: 20px;
+    
+}
+
+.depoimentos {
+    display: flex;
+    justify-content: center;
+}
+
+.linha{
+    /* border: 0.5px solid #2093bf; */
+    width: 60%;
+    align-self: center;
+    margin: 0px;
 }
 
 .container-depoimento h1 {
@@ -45,6 +58,7 @@
     font-weight:bold;
     color: rgb(41, 41, 41);
     text-align: center;
+    padding: 20px;
 }
 
 

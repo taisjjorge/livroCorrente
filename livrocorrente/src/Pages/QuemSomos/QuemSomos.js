@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Figure } from 'react-bootstrap';
+import { Figure } from 'react-bootstrap';
 import HeaderPagina from '../../Components/HeaderPagina';
 import './quemSomos.css';
 import Depoimentos from '../../Components/Depoimento';
@@ -36,7 +36,11 @@ export default function QuemSomos () {
                 </div>
                 {/* Depoimentos */}
                 <div className="container-depoimento" >
-                    <h1>Depoimentos</h1>
+                    <div className="depoimentos">
+                        <hr className="linha" />
+                        {/* <h1>Depoimentos</h1>
+                        <hr className="linha" /> */}
+                    </div>
                     <Depoimentos />
                 </div>
             </div>

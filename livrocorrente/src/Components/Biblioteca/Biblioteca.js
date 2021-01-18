@@ -1,11 +1,15 @@
 import React from 'react';
 import { Col, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 
 import './biblioteca.css';
 
 
 export default function Biblioteca (props){ 
+
+
 
     return (
       
@@ -18,10 +22,12 @@ export default function Biblioteca (props){
                 <Card.Text>{props.estado_biblioteca}, {props.cidade_biblioteca}</Card.Text>
               </Card.Body>
               <Card.Body>
-               <Card.Link href={props.linkRNBC_biblioteca}>Perfil</Card.Link>
-               <Card.Link href={props.linkCampanhas_biblioteca}>Campanhas</Card.Link>
+               <Card.Link className="link-externo" href={props.linkRNBC_biblioteca}>Perfil</Card.Link>
+               <Link to={props.linkCampanhas_biblioteca}><Card.Link>Campanhas</Card.Link></Link>
              </Card.Body>
             </Card>
           </Col>
     );
 }
+
+

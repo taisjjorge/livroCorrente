@@ -20,6 +20,7 @@ export default function Bibliotecas() {
       estado_biblioteca: "Rio de Janeiro",
       cidade_biblioteca: "RJ",
       linkRNBC_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/',
+      linkCampanhas_biblioteca: '../../Campanhas',
       
     },
 
@@ -29,7 +30,7 @@ export default function Bibliotecas() {
       estado_biblioteca: "Rio de Janeiro",
       cidade_biblioteca: "RJ",
       linkRNBC_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/',
-      linkCampanhas_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/'
+      linkCampanhas_biblioteca: '../../Campanhas'
     },
 
     {
@@ -39,7 +40,7 @@ export default function Bibliotecas() {
       estado_biblioteca: "Rio de Janeiro",
       cidade_biblioteca: "RJ",
       linkRNBC_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/',
-      linkCampanhas_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/'
+      linkCampanhas_biblioteca: '../../Campanhas'
 
   },
 
@@ -49,7 +50,7 @@ export default function Bibliotecas() {
     estado_biblioteca: "Rio de Janeiro",
     cidade_biblioteca: "RJ",
     linkRNBC_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/',
-    linkCampanhas_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/'
+    linkCampanhas_biblioteca: '../../Campanhas'
   },
 
   {
@@ -58,7 +59,7 @@ export default function Bibliotecas() {
     estado_biblioteca: "Rio de Janeiro",
     cidade_biblioteca: "RJ",
     linkRNBC_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/',
-    linkCampanhas_biblioteca: ''
+    linkCampanhas_biblioteca: '../../Campanhas'
   },
 
   ]

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Figure } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import HeaderCampanha from '../../Components/HeaderCampanha';
 import './campanhas.css';
 import Campanha from '../../Components/Campanha';
@@ -40,7 +40,11 @@ export default function Campanhas () {
     return (
         
         <div className="div-main-campanhas">
-            <HeaderCampanha/>
+            <HeaderCampanha nomeBiblioteca="Biblioteca X"/>
+
+            <h1 className="titulo-principal">Confira todas as campanhas abertas por esta biblioteca:</h1>
+            <h3 className="titulo-secundario">Contribua com uma biblioteca comunitária!</h3>
+
             <Container className="div-campanhas">
                 {campanhas.map(campanha =>{
                     return(

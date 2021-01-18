@@ -7,16 +7,13 @@ import '../Forms.css';
 export default function DadosUsuario({ aoEnviar, validacoes }) {
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
-  
     const [erros, setErros] = useState({senha:{valido:true, texto:""}})
     
     function validarCampos(event){
-      
           const {name, value} = event.target;
           const novoEstado = {...erros}
           novoEstado[name] = validacoes[name](value);
           setErros(novoEstado);
-          
   }
 
     //function para não permitir que o usuário avance no cadastro sem preencher os campos corretamente

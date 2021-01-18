@@ -5,7 +5,7 @@ import '../Forms.css';
 
 
 export default function DadosUsuario({ aoEnviar, validacoes }) {
-    const [email, setEmail] = useState("");
+    const [user, setUser] = useState("");
     const [senha, setSenha] = useState("");
 
     const [erros, setErros] = useState({senha:{valido:true, texto:""}})
@@ -34,39 +34,42 @@ export default function DadosUsuario({ aoEnviar, validacoes }) {
                 onSubmit={(event) => {
                     event.preventDefault();
                     if(possoEnviar()){
-                        aoEnviar({ email, senha });
+                        aoEnviar({ user, senha });
                     }
                   }}>
 
                 <FormControl className="form" method="POST">
 
-                        <TextField 
-                        value={email}
+                    <TextField 
+                        value={user}
                         onChange={(event) => {
-                          setEmail(event.target.value);
+                          setUser(event.target.value);
                         }}
-                            id="email"
-                            name="email"
-                            label="Email"
-                            type="email"
-                            required
-                            variant="outlined"
-                            margin="normal"
-                        />
+                        id="user"
+                        name="user"
+                        label="Usuário"
+                        type="text"
+                        required
+                        variant="outlined"
+                        margin="normal"
+                    />
 
-                        <TextField 
-                            value={senha}
-                            onChange={(event) => {
-                              setSenha(event.target.value);
-                            }}
-                            id="senha"
-                            name="senha"
-                            label="Senha"
-                            type="password"
-                            required
-                            variant="outlined"
-                            margin="normal"             
-                        />
+                    <TextField 
+                        value={senha}
+                        onChange={(event) => {
+                          setSenha(event.target.value);
+                        }}
+                        onBlur={validarCampos}
+                        error={!erros.senha.valido}
+                        helperText={erros.senha.texto}
+                        id="senha"
+                        name="senha"
+                        label="Senha"
+                        type="password"
+                        required
+                        variant="outlined"
+                        margin="normal"             
+                    />
 
                         <Button color="primary" active type="submit">Próximo</Button>
                     

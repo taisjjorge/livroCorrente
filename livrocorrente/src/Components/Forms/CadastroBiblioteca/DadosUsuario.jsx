@@ -5,7 +5,7 @@ import '../Forms.css';
 
 
 export default function DadosUsuario({ aoEnviar, validacoes }) {
-    const [email, setEmail] = useState("");
+    const [user, setUser] = useState("");
     const [senha, setSenha] = useState("");
     const [erros, setErros] = useState({senha:{valido:true, texto:""}})
     
@@ -34,21 +34,21 @@ export default function DadosUsuario({ aoEnviar, validacoes }) {
                 onSubmit={(event) => {
                     event.preventDefault();
                     if(possoEnviar()){
-                        aoEnviar({ email, senha });
+                        aoEnviar({ user, senha });
                     }
                   }}>
                 
                 <FormControl className="form" method="POST">
 
                     <TextField
-                         value={email}
+                         value={user}
                          onChange={(event) => {
-                           setEmail(event.target.value);
+                           setUser(event.target.value);
                          }}
-                        id="email"
-                        name="email"
-                        label="Email"
-                        type="email"
+                        id="user"
+                        name="user"
+                        label="Usuário"
+                        type="text"
                         required
                         variant="outlined"
                         margin="normal"

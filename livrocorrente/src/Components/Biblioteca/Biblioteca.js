@@ -1,5 +1,7 @@
 import React from 'react';
 import { Col, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 
 import './biblioteca.css';
@@ -7,35 +9,7 @@ import './biblioteca.css';
 
 export default function Biblioteca (props){ 
 
-    // return(
-    //       <div className="card">
-    //       <Card style={{ width: '18rem' }}>
-    //         <Card.Img variant="top" src={require(`./img/img-bib.png`).default} />
-    //         <Card.Body>
-    //           <Card.Title>{props.title}</Card.Title>
-    //           <Card.Text>
-    //             {props.description}
-    //           </Card.Text>
-    //         </Card.Body>
-    //         <Card.Body>
-    //           <Card.Link href={props.link}>Perfil</Card.Link>
-    //           <Card.Link href="#">Campanhas</Card.Link>
-    //         </Card.Body>
-    //       </Card>
 
-
-
-    //        <div className="card-biblioteca"> 
-    //           <img src={require(`./img/pequenoprincipe.png`).default} className="livro-campanha" alt="Capa Livro" />
-    //           <div className="info-biblioteca">
-    //             <h3>{props.title}</h3>
-    //             <p>{props.description}</p>
-    //             <a href={props.link}>Perfil</a>                
-    //             <a href={props.link}>Campanhas</a> 
-    //           </div> 
-    //       </div> 
-    //       </div>
-    // )
 
     return (
       
@@ -43,17 +17,17 @@ export default function Biblioteca (props){
             <Card className="card">
               <Card.Img variant="top" src={require(`./img/img-bib.png`).default} />
               <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
-                <Card.Text>{props.description}</Card.Text>
+                <Card.Title>{props.nome_biblioteca}</Card.Title>
+                <Card.Text>Rede: {props.nome_rede}</Card.Text>
+                <Card.Text>{props.estado_biblioteca}, {props.cidade_biblioteca}</Card.Text>
               </Card.Body>
               <Card.Body>
-               <Card.Link href={props.link}>Perfil</Card.Link>
-               <Card.Link href="#">Campanhas</Card.Link>
+               <Card.Link className="link-externo" href={props.linkRNBC_biblioteca}>Perfil</Card.Link>
+               <Link to={props.linkCampanhas_biblioteca}><Card.Link>Campanhas</Card.Link></Link>
              </Card.Body>
             </Card>
           </Col>
-     
-        
-        
     );
 }
+
+

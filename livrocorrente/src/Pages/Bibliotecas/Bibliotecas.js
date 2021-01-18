@@ -12,34 +12,56 @@ export default function Bibliotecas() {
 
   //Array simulando um Json vindo do BD
   const bibliotecas = [
+
+    
     {
-        id: 1,
-        title: 'Casa Azul',
-        description: 'Biblioteca comunitária. Integrante de Mar de Leitores - RJ',
-        link: 'https://rnbc.org.br/biblioteca/casa-azul/',
+      nome_biblioteca: 'Biblioteca comunitária X',
+      nome_rede: 'Rede bibliotecas X',
+      estado_biblioteca: "Rio de Janeiro",
+      cidade_biblioteca: "RJ",
+      linkRNBC_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/',
+      linkCampanhas_biblioteca: '../../Campanhas',
+      
     },
 
     {
-        id: 2,
-        title: 'Biblioteca comunitária Y',
-        description: 'Lorem ipsum .....',
-        link: 'https://google.com'
+      nome_biblioteca: 'Biblioteca comunitária Y',
+      nome_rede: 'Rede bibliotecas Y',
+      estado_biblioteca: "Rio de Janeiro",
+      cidade_biblioteca: "RJ",
+      linkRNBC_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/',
+      linkCampanhas_biblioteca: '../../Campanhas'
     },
 
     {
-      id: 2,
-      title: 'Biblioteca comunitária Z',
-      description: 'Lorem ipsum .....',
-      link: 'https://google.com'
+      
+      nome_biblioteca: 'Biblioteca comunitária Z',
+      nome_rede: 'Rede bibliotecas Z',
+      estado_biblioteca: "Rio de Janeiro",
+      cidade_biblioteca: "RJ",
+      linkRNBC_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/',
+      linkCampanhas_biblioteca: '../../Campanhas'
+
   },
 
   {
-    id: 2,
-    title: 'Biblioteca comunitária Z',
-    description: 'Lorem ipsum .....',
-    link: 'https://google.com'
+    nome_biblioteca: 'Biblioteca comunitária X',
+    nome_rede: 'Rede bibliotecas X',
+    estado_biblioteca: "Rio de Janeiro",
+    cidade_biblioteca: "RJ",
+    linkRNBC_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/',
+    linkCampanhas_biblioteca: '../../Campanhas'
   },
-   
+
+  {
+    nome_biblioteca: 'Biblioteca comunitária Y',
+    nome_rede: 'Rede bibliotecas Y',
+    estado_biblioteca: "Rio de Janeiro",
+    cidade_biblioteca: "RJ",
+    linkRNBC_biblioteca: 'https://rnbc.org.br/biblioteca/casa-azul/',
+    linkCampanhas_biblioteca: '../../Campanhas'
+  },
+
   ]
 
     return (
@@ -52,7 +74,9 @@ export default function Bibliotecas() {
           <Row>
           {bibliotecas.map(biblioteca => {
             return (
-                  <Biblioteca title={biblioteca.title} description={biblioteca.description} link={biblioteca.link} />
+                  <Biblioteca nome_biblioteca={biblioteca.nome_biblioteca} nome_rede={biblioteca.nome_rede} 
+                  estado_biblioteca={biblioteca.estado_biblioteca} cidade_biblioteca={biblioteca.cidade_biblioteca} linkRNBC_biblioteca={biblioteca.linkRNBC_biblioteca}
+                   linkCampanhas_biblioteca={biblioteca.linkCampanhas_biblioteca}/>
             )
           })}
           </Row>

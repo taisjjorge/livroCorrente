@@ -12,7 +12,7 @@ export default function Campanha(props){
   
           <div className="card-campanha">
             <div className="img-campanha">
-              <img src={require(`./img/pequenoprincipe.png`).default} className="livro-campanha" alt="Capa Livro" />
+              <img src={require(`./img/${props.capa_pedido}`).default} className="livro-campanha" alt="Capa Livro" />
             </div>
             <div className="info-campanha">
               <h4>{props.titulo_livro}</h4>

@@ -20,11 +20,11 @@ function FormularioCadastro({aoEnviar, validacoes}) {
     <DadosUsuario aoEnviar={coletarDados} validacoes={validacoes} />, 
     <DadosIdentificacao aoEnviar={coletarDados} validacoes={validacoes} />,
     <Necessidade aoEnviar={coletarDados} validacoes={validacoes}/>,
-    <Typography variant="h6"> Agradecemos o seu cadastro!<br/><br/>
-        <p className="logo-login">LivroCorrente</p><br/>
+    <Typography variant="h6" align="center"> 
+    <br></br>Agradecemos o seu cadastro!<br></br>
+    Nossa equipe entrará em contato para confirmar as informações recebidas e indicar
+    os próximos passos. <br></br><br></br><br></br>
     </Typography> 
-
-    // <Typography variant="h8"> Entraremos em contato para dar as boas vindas e esclarecer eventuais dúvidas.</Typography>
 ];
 
     function coletarDados(dados){
@@ -38,6 +38,8 @@ function FormularioCadastro({aoEnviar, validacoes}) {
 
     return (
         <>
+        <br></br>
+        <Typography  variant="h5" component="h1" align="center">Cadastre-se</Typography>
             <Stepper activeStep={etapaAtual}>
                 <Step>
                     <StepLabel>

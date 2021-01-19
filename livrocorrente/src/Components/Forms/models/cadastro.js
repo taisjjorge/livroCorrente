@@ -22,4 +22,20 @@ function validarSenha(senha){
     }
   }
 
-  export {validarCpf, validarSenha, validarNome};
+  function validarCelular(celular){
+    if(celular.length < 11){
+      return {valido:false, texto:"Formato DDD + número"}
+    } else {
+      return {valido:true, texto:""}
+    }
+  }
+
+  function validarQtde(qtde){
+    if(qtde > 3){
+      return {valido:false, texto:"Selecione até 3 exemplares"}
+    } else {
+      return {valido:true, texto:""}
+    }
+  }
+
+  export {validarCpf, validarSenha, validarNome, validarCelular, validarQtde};

@@ -35,14 +35,14 @@ export default function QuemSomos () {
                     </div>
                 </div>
                 {/* Depoimentos */}
+                <div className="equipe"></div>
                 <div className="container-depoimento" >
-                    <div className="depoimentos">
+                    {/* <div className="depoimentos">
                         <hr className="linha" />
-                        {/* <h1>Depoimentos</h1>
-                        <hr className="linha" /> */}
-                    </div>
+                    </div> */}
                     <Depoimentos />
                 </div>
+
             </div>
            
            

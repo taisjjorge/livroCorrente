@@ -48,7 +48,7 @@ export default function Campanhas () {
             <Container className="div-campanhas">
                 {campanhas.map(campanha =>{
                     return(
-                        <Campanha titulo_livro={campanha.titulo_livro} numeroExemplar_pedido={campanha.numeroExemplar_pedido} 
+                        <Campanha capa_livro={campanha.capa_livro} titulo_livro={campanha.titulo_livro} numeroExemplar_pedido={campanha.numeroExemplar_pedido} 
                         genero_livro={campanha.genero_livro} nome_biblioteca={campanha.nome_biblioteca} />
                     )
                 })}
